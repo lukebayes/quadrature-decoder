@@ -43,4 +43,4 @@ typedef struct
 bool quadrature_decoder_init(quadrature_decoder* qd, PIO pio);
 int32_t add_quadrature_decoder(quadrature_decoder* qd, uint32_t pinBase);
 void restart_dma_before_it_stops(quadrature_decoder* qd, int32_t index);
-int32_t get_count(quadrature_decoder* qd, int32_t index);
+int32_t quadrature_decoder_get_count(quadrature_decoder* qd, int32_t index);

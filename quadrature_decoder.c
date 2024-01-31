@@ -111,7 +111,7 @@ void restart_dma_before_it_stops(quadrature_decoder* qd, int32_t index)
 }
 
 
-int32_t get_count(quadrature_decoder* qd, int32_t index)
+int32_t quadrature_decoder_get_count(quadrature_decoder* qd, int32_t index)
 {
     hard_assert ( index >= 0 && index < (int32_t)(sizeof(qd->m_counters)/sizeof(qd->m_counters[0])) );
     int32_t count = qd->m_counters[index];
